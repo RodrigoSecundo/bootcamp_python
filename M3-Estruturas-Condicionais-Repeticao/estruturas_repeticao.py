@@ -5,12 +5,19 @@
 
 # Exemplo 1: Estrutura de repetição for
 print("Exemplo 1: Estrutura de repetição for")
-for i in range(5):
+for i in range(5): #range(5) gera os números de 0 a 4, pois range começa do 0 por padrão
     print("Número:", i)
     if i % 2 == 0:
         print(i, "é um número par.")
     else:
         print(i, "é um número ímpar.")
+
+# range(start, stop, step) também pode ser usado para definir o início, fim e passo da contagem
+print("\nExemplo adicional: Uso de range com start, stop e step")
+print("São números ímpares:")
+for j in range(1, 11, 2): # Começa em 1, vai até 10 (11 não incluso), pulando de 2 em 2
+    print(j, end=" ") #end=" " mantém os números na mesma linha separados por espaço
+print()
 
 # Exemplo 2: Estrutura de repetição while
 print("\nExemplo 2: Estrutura de repetição while")
@@ -67,3 +74,74 @@ for letra in nome:
         print(letra, "é uma consoante.")
 print("\nFim dos exemplos de estruturas de repetição.")
 
+# DESAFIO 1:
+
+infinito = 0
+while infinito != 1:
+    print("Esse loop é infinito!")
+    break # Para evitar o loop infinito, usamos break aqui.
+
+# DESAFIO 2:
+
+numero = 0
+
+while numero % 2 == 0:
+    numero = int(input("Digite um número: "))
+    if numero % 2 == 0:
+        print("Você digitou um número par. Tente novamente.")
+    else:
+        print("Você digitou um número ímpar. Parabéns!")
+
+# ou
+
+numero = 0
+
+while True:
+    numero = int(input("Digite um número: "))
+    if numero % 2 == 0:
+        print("Você digitou um número par. Tente novamente.")
+    else:
+        print("Você digitou um número ímpar. Parabéns!")
+        break
+
+# ou, muito menos eficiente e não recomendado:
+
+numero = 0
+
+for numero in range(10**10):  # um laço enorme
+    numero = int(input("Digite um número: "))
+    if numero % 2 == 0:
+        print("Você digitou um número par. Tente novamente.")
+    else:
+        print("Você digitou um número ímpar. Parabéns!")
+        break
+
+# for não é recomendado para esse desafio, pois não sabemos quantas tentativas o usuário fará antes de digitar um número ímpar.
+
+# break é usado para sair do loop quando a condição desejada é atendida.
+# outro uso de break seria para sair de loops infinitos criados com while True.
+# continue pode ser usado para pular para a próxima iteração do loop, ignorando o código restante na iteração atual.
+
+continue_exemplo = 0
+for continue_exemplo in range(10):
+    if continue_exemplo % 2 == 0:
+        continue  # pula os números pares
+    print("Número ímpar (usando continue):", continue_exemplo)
+
+# Nesse exemplo, os números pares são ignorados e apenas os ímpares são impressos.
+
+#DESAFIO 3:
+
+while True:
+    abc = int(input("Digite um número: "))
+
+    if abc % 2 == 0:
+        continue
+
+    if abc == 10:
+        break
+
+    print(abc)
+
+# Nesse desafio, o loop continua pedindo números até que o usuário digite 10.
+# Mas como 10 é par, o continue faz com que o break nunca seja alcançado, resultando em um loop infinito.

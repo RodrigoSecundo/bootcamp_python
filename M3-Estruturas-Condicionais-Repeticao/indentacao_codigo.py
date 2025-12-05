@@ -22,19 +22,17 @@ for i in range(5):
         print(i, "é um número ímpar.")
 
 # Exemplo de função com identação correta
-def saudacao(nome):
-    print(f"Olá, {nome}!")
-    if nome == "Alice":
-        print("Bem-vinda de volta, Alice!")
+def saudacao():
+    nome = input("Digite seu nome: ")
+    if nome == "Clarice":
+        print("Bem-vinda de volta, Clarice!")
     else:
-        print("Prazer em conhecê-lo!")
-saudacao("Alice")
-saudacao("Bob")
-saudacao("Charlie")
+        print("Prazer em conhecê-lo(a)!", nome)
+
+saudacao()
 
 # Lembre-se de que a identação incorreta resultará em erros de sintaxe ou comportamento inesperado do programa.
 # Exemplo de identação incorreta (descomente para ver o erro)
 # if idade >= 18:
 # print("Você é maior de idade.")  # Erro de identação
 #     print("Você é um adulto.")
-

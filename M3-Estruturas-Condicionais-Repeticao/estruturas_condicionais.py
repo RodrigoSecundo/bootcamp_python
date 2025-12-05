@@ -39,3 +39,29 @@ status = "maior de idade" if idade >= 18 else "menor de idade"
 print("Você é", status + ".")
 
 # Esses exemplos ilustram como usar estruturas condicionais em Python para controlar o fluxo do programa com base em diferentes condições.
+
+# DESAFIO 1:
+
+def verificar_numero():
+    numero = input("Digite um número: ")
+    numero = int(numero)
+    if numero > 0:
+        print("O número é positivo.")
+    elif numero < 0:
+        print("O número é negativo.")
+    else:
+        print("O número é zero.")
+
+verificar_numero()
+
+# DESAFIO 2:
+
+def par_ou_impar():
+    numero = input("Digite um número: ")
+    numero = int(numero)
+    if numero % 2 == 0:
+        print("O número é par.")
+    else:
+        print("O número é ímpar.")
+
+par_ou_impar()
