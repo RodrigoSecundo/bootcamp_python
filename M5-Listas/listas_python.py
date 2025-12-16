@@ -64,15 +64,3 @@ print("Cópia da lista de inteiros:", copia_lista)  # Saída: [10, 15, 2, 3, 4]
 # Limpando uma lista
 lista_mista.clear()
 print("Lista mista após limpeza:", lista_mista)  # Saída: []
-
-# Métodos úteis para listas:
-# 1. .append(item): Adiciona um item ao final da lista.
-# 2. .insert(index, item): Insere um item em uma posição específica.
-# 3. .remove(item): Remove a primeira ocorrência de um item da lista.
-# 4. .pop(index=-1): Remove e retorna o item na posição especificada
-# 5. .clear(): Remove todos os itens da lista.
-# 6. .index(item): Retorna o índice da primeira ocorrência de um item.
-# 7. .count(item): Retorna o número de vezes que um item aparece na lista.
-# 8. .sort(): Ordena os itens da lista em ordem crescente.
-# 9. .reverse(): Inverte a ordem dos itens na lista.
-# 10. .copy(): Retorna uma cópia rasa da lista.
