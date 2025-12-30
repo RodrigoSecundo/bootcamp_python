@@ -1,4 +1,4 @@
-# DESAFIO 05 — Catálogo imutável (Tuplas)
+# DESAFIO 07 — Catálogo imutável (Tuplas)
 #
 # Objetivo: treinar tuplas, tuplas aninhadas, métodos `.count()`/`.index()`, fatiamento e conversão tuple<->list.
 #
@@ -35,6 +35,8 @@
 # - Você já viu que `sorted(tupla)` retorna lista.
 # - A tupla pode conter elementos repetidos.
 # - Para contar "banana" por nome, você pode fazer um `for` e somar.
+
+print("Desafio 7: ")
 
 catalogo = (
     ("maçã", 2.50),
